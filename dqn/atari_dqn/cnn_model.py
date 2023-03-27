@@ -15,3 +15,6 @@ def create_q_model(action_space):
         layers.Dense(512, activation=relu),
         layers.Dense(action_space, activation="linear", name="Actions")
     ])
+
+# model = create_q_model(6)
+# model.summary()

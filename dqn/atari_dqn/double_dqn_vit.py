@@ -9,8 +9,23 @@ import numpy as np
 
 from atari_env import make_env
 from ReplayBuffer import ReplayBuffer
-from cnn_model import create_q_model
+# from cnn_model import create_q_model
+from vit_tensorflow.scalable_vit import ScalableViT
+from swins import SwinTransformer
 
+def create_vit_model(num_actions):
+    cfg = dict(
+        patch_size=3,
+        window_size=7,
+        embed_dim=96,
+        depths=(2, 3, 2),
+        num_heads=(3, 3, 6),
+        num_classes=num_actions,
+    )
+
+    return SwinTransformer(
+        name="SwinTransformer", **cfg
+    )
 
 def linear_schedule(start_epsilon: float, end_epsilon: float, duration: int, timestep: int):
     slope = (end_epsilon - start_epsilon) / duration
@@ -51,8 +66,8 @@ class DoubleDQNAgent:
         self.optimizer = tf.keras.optimizers.Adam(learning_rate=self.LEARNING_RATE)
         self.loss_function = tf.keras.losses.MeanSquaredError()
 
-        self.model = create_q_model(self.NUM_ACTIONS)
-        self.target_model = create_q_model(self.NUM_ACTIONS)
+        self.model = create_vit_model(self.NUM_ACTIONS)
+        self.target_model = create_vit_model(self.NUM_ACTIONS)
         self.target_model.set_weights(self.model.get_weights())
 
         self.checkpoint = tf.train.Checkpoint(optimizer=self.optimizer, network=self.model,
@@ -123,6 +138,7 @@ class DoubleDQNAgent:
 
                     # Perform experience replay
                     # Predict the target q value from the next sample sates
+                    next_observations_sample = tf.reshape(next_observations_sample, [32, 84, 84, 4])
                     target_q_values = self.test_step(next_observations_sample)
 
                     # print(f"target_q_values: {target_q_values}")
@@ -147,6 +163,7 @@ class DoubleDQNAgent:
                     # corresponding to the category and all other values as 0.
                     masks = tf.one_hot(actions_sample, self.NUM_ACTIONS)
 
+                    observations_sample = tf.reshape(observations_sample, [32, 84, 84, 4])
                     self.train_step(observations_sample, target_q_values, masks)
 
                     # Now, we need to calculate the gardient descent, using GradientTape to record the operation made
@@ -194,6 +211,9 @@ class DoubleDQNAgent:
             # Predict action Q-values
             state_tensor = tf.convert_to_tensor(
                 state)  # Convert the state numpy array to a tensor array because tensorflow only accept tensor
+
+            state_tensor = tf.reshape(state_tensor, [84, 84, 4])
+
             state_tensor = tf.expand_dims(state_tensor,
                                           0)  # Add one dimension to the state because this is a batch of only one state
             q_values = self.model(state_tensor,
@@ -271,4 +291,4 @@ train_env = make_env()
 
 agent = DoubleDQNAgent(train_env)
 # agent.load_checkpoint("checkpoints")
-agent.train(from_checkpoint=False)
+agent.train()

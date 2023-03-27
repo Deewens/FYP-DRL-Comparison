@@ -263,3 +263,4 @@ cython_debug/
 #.idea/
 
 dqn/atari_dqn/checkpoints
+dqn/atari_dqn/checkpoints-backup
