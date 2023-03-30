@@ -262,5 +262,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-dqn/atari_dqn/checkpoints
-dqn/atari_dqn/checkpoints-backup
+dqn-old/atari_dqn/checkpoints
+dqn-old/atari_dqn/checkpoints-backup
