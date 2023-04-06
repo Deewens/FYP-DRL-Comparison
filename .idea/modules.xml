@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/RL-and-NN-Experiments.iml" filepath="$PROJECT_DIR$/.idea/RL-and-NN-Experiments.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../TensorFlowExperiments/.idea/TensorFlowExperiments.iml" filepath="$PROJECT_DIR$/../TensorFlowExperiments/.idea/TensorFlowExperiments.iml" />
     </modules>
   </component>
 </project>
