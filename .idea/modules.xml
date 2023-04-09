@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../FYP_GUI/.idea/FYP_GUI.iml" filepath="$PROJECT_DIR$/../FYP_GUI/.idea/FYP_GUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/RL-and-NN-Experiments.iml" filepath="$PROJECT_DIR$/.idea/RL-and-NN-Experiments.iml" />
     </modules>
   </component>

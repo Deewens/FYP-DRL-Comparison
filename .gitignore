@@ -262,5 +262,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-dqn-old/atari_dqn/checkpoints
-dqn-old/atari_dqn/checkpoints-backup
+# Do not include checkpoint files in the repository because they are too big
+#algorithms/pytorch/runs/checkpoints/
+**/runs/checkpoints/

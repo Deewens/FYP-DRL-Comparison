@@ -28,7 +28,7 @@ class DoubleDQNAgent:
         # self.REPLAY_START_SIZE = 50 # Small value used for quick debugging
         self.FINAL_EXPLORATION_STEP = 1000000  # Number of frames over which the initial value of epsilon is linearly annealed to its final value.
 
-        self.TOTAL_TIMESTEPS = 10000000  # Number of frames over which the initial value of epsilon is linearly annealed to its final value.
+        self.TOTAL_TIMESTEPS = 10_000_000  # Number of frames over which the initial value of epsilon is linearly annealed to its final value.
 
         self.EXPLORATION_FRACTION = 0.10  # The fraction of 'TOTAL_TIMESTEPS' it takes from 'EPSILON_START' to 'EPSILON_END'.
         self.INITIAL_EXPLORATION = 1.0  # Initial value of epsilon in Epsilon-Greedy exploration
