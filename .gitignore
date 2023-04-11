@@ -263,5 +263,4 @@ cython_debug/
 #.idea/
 
 # Do not include checkpoint files in the repository because they are too big
-#algorithms/pytorch/runs/checkpoints/
 **/runs/checkpoints/
