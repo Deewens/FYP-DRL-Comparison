@@ -1,0 +1,3 @@
+[submodule "algorithms/pytorch/common/swin_transformer"]
+	path = algorithms/pytorch/common/swin_transformer
+	url = https://github.com/microsoft/Swin-Transformer.git
