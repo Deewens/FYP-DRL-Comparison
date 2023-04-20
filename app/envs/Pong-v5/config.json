@@ -1,0 +1,21 @@
+{
+  "env_id": "ALE/Pong-v5",
+  "env_name": "Pong-v5",
+  "description": "Pong features 3 types of agent: one trained with a Conv Network with Double DQN and the other two trained with Swin Transformer (standard and Double DQN)",
+  "agents": [
+    {
+      "display_name": "Random Agent",
+      "type": "Random"
+    },
+    {
+      "display_name": "Swin Double Deep Q Network",
+      "type": "MicrosoftSwin",
+      "path": "Swin_Double_DQN_Pong-v5.pth"
+    },
+    {
+      "display_name": "Swin Deep Q Network",
+      "type": "StableBaselines3Swin",
+      "path": "Swin_DQN_Pong-v5.zip"
+    }
+  ]
+}
