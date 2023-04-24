@@ -1,11 +1,13 @@
 from tkinter import *
 from tkinter import ttk
+from tkinter import font
 
 from app.widgets.interface import HeaderFrame, AgentListFrame, EnvironmentListFrame, NetworkVisualisationFrame
 from app.widgets.env_display import EnvironmentDisplayFrame
 from app.utils.typing import EnvConfig, AgentConfig
-
 import sv_ttk
+
+
 
 class MainApplication(ttk.Frame):
     def __init__(self, master: Misc, *args, **kwargs):
@@ -44,6 +46,10 @@ class MainApplication(ttk.Frame):
 if __name__ == '__main__':
     root = Tk()
 
+    default_font = font.nametofont("TkDefaultFont")
+    default_font.config(family="Helvetica", size=42)
+
+
     root.title("FYP Deep Reinforcement Learning Comparison")
     # root.geometry("800x400")
     root.geometry("1920x1080")
@@ -54,6 +60,7 @@ if __name__ == '__main__':
     s.configure("BGRed.TFrame", background="red")
     s.configure("BGPink.TFrame", background="pink")
     s.configure("BGMagenta.TFrame", background="magenta")
+    s.configure('.', font=('Helvetica', 42))
 
     root.columnconfigure(0, weight=1)
     root.rowconfigure(0, weight=1)

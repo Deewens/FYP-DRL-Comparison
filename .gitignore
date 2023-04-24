@@ -265,3 +265,5 @@ cython_debug/
 # Do not include checkpoint files in the repository because they are too big
 **/runs/checkpoints/
 **/runs/videos/
+*.pth
+*.tar

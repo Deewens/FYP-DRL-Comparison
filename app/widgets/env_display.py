@@ -28,7 +28,7 @@ class EnvironmentDisplayFrame(ttk.LabelFrame):
     def __init__(self, master: Misc, *args, **kwargs):
         super(EnvironmentDisplayFrame, self).__init__(master, *args, **kwargs)
 
-        self.IMAGE_SIZE = (160 * 3, 240 * 3)
+        self.IMAGE_SIZE = (160 * 5, 240 * 5)
 
         self.padding = int(str(self.cget("padding")[0]))
         self.is_playing = False
@@ -69,6 +69,8 @@ def make_env(env_name="ALE/Pong-v5", seed=42):
 
     env.observation_space.seed(seed)
     env.action_space.seed(seed)
+
+    env.metadata['render_fps'] = 30
 
     return env
 

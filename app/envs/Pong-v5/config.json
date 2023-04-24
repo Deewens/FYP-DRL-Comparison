@@ -8,6 +8,11 @@
       "type": "Random"
     },
     {
+      "display_name": "Convolutional Double Deep Q Network",
+      "type": "Conv",
+      "path": "CNN_Double_DQN_Pong-v5.pth"
+    },
+    {
       "display_name": "Swin Double Deep Q Network",
       "type": "MicrosoftSwin",
       "path": "Swin_Double_DQN_Pong-v5.pth"
