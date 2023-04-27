@@ -1,0 +1,9 @@
+# Issues when using a basic Vision Transformer to solve computer vision task
+
+Self-attention based architecture, in particual Transformers have become the go-to model for Natural Language Processing (Vaswani et al., 2017). In computer vision however, convolutional architectures remained dominant (LeCun et al., 1989; Krizhevsky et al.2012; He et al.,2016). Researcher tried to combine CNN-like architectures with self-attention (Wang et al., 2018; Carion et al., 2020), with some even replacing the contolutions entirely (Ramachandran et al., 2019; Wang et al.; 2020). However, these models were not scaled effectively on modern harware accelerators due to the use of specialised attention patterns (Dosovitskiy et al., 2021).
+
+The model experimented by Dosovitskiy et al. is inspired by the Transformer architecture from NLP, with the fewest possible modifications. The image is splitted into patches and provide a sequence of linear embeddings of these patches as an input to a Transformer. The patches are treated the same way as tokens (workds) in an Transformer for NLP tasks.
+
+Transformers lack some of the inductive biases inherant to CNNs, such as translation equivariance and locality, and therefore do not generalize well when trained on insufficient amount of data. However, if the models are trained on larger datasets, the large scale training trumps inductive bias, and the ViT is capable of attaining excelent results when pre-trained at sufficient scale (Dosovitskiy et al.).
+
+This is causing issue in our Reinforcement Learning case. As training takes already longer than simpler image classification task, this induce an even longer training time and the power of my current system is not able to perform this task, thus, I cannot try the raw Vision Transformer to directly replace the CNN architecture.

@@ -1,0 +1,3 @@
+# Recurent Neural Network
+
+A **Recurrent Neural Network** (RNN) is a special type of artificial neural network adapted to work for time series data or data that involves sequences. Ordinary feedforward neural networks are only meant for data points that are independent of each other. However, if we have data in a sequence such that one data point depends upon the previous data point, we need to modify the neural network to incorporate the dependencies between these data points. RNNs have the concept of “**memory**” that helps them store the states or information of previous inputs to generate the next output of the sequence.

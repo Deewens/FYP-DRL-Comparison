@@ -3,7 +3,7 @@
 The purpose of this project is to compare the traditional Convolutional Neural Network against Swin Transformer in the
 context of Deep Reinforcement Learning.
 
-## Experiment
+## Overview
 
 In this expriment, I implemented the Double Deep Q Network, and compared the Convolutional Neural Network architecture
 against the Swin Transformer architecture to solves the Atari game environment Pong and Breakout. Please read the
@@ -22,6 +22,51 @@ project report located in docs/ to have detailed information on the purpose of t
   and _Software Requirements Specification_.
 - **learning/**: I wrote some of the code that I gathered from some of the tutorials and guides I followed at the start
   of the project of whenever I needed to learn a feature of a library to do something
+
+## Documents
+I exported some of the documentation from my Notion, a note taking-app I used throughout the project.
+
+- [Notion Link](https://nifty-garlic-a2b.notion.site/Fourth-Year-Project-709413d18af747268ef9964444851f5c)
+- [Thesis, Software Requirements Specification, Technical Design Document](docs)
+- [Guides](docs/Guides): technical guides I wrote
+- [Notes and Knowledge](docs/Notes%20and%20Knowledges): contains the courses and thoughts I wrote to myself during the project
+
+## Requirements and Usages
+
+### System requirements
+
+- **Linux** - Ubuntu-based system
+- Python 3.8
+- NVIDIA GPU
+
+**Required for TensorFlow 2.12**
+
+- NVIDIA GPU drivers version 450.80.02 or higher
+- CUDA Toolkit 11.8
+- cuDNN SDK 8.6.0
+
+See my installation guides that I made to install CUDA in `docs/guides`. Only needed for a TensorFlow
+installation. Because I switched my code to PyTorch, it is not needed any more (except if you want to try and start my
+TensorFlow code)
+
+- [How to install CUDA 11.8 (TensorFlow 2.12)](docs/guides/How%20to%20install%20CUDA%2011.8.md)
+- [How to install CUDA 11.2 (TensorFlow 2.11)](docs/guides/How%20to%20install%20CUDA%2011.2.md)
+
+> For **PyTorch 2.0**, you **do not need** to install the above requirements yourself, as they are already included in
+> the PyTorch binaries.
+
+### Python Packages
+
+You should ideally uses a conda environment to install these package. PyTorch can be installed using `conda`, the other
+should be installed with `pip`
+
+| Package           | Version | Description                                                                                                   |
+|-------------------|---------|---------------------------------------------------------------------------------------------------------------|
+| PyTorch           | 2.0     | Machine learning library ([Installation guide](https://pytorch.org/get-started/locally/#linux-prerequisites)) |
+| Gymnasium         | 0.28.1  | Provides a standard API for RL, and the Atari environments                                                    |
+| Stable Baselines3 | 1.8.0   | Set of implementation or RL algorithms, including DQN                                                         |
+| Transformers      | 4.28.1  | Collection of Transformers NN, including Swin Transformer                                                     |
+| Moviepy           | -       | To record video from environment                                                                              |
 
 ## Experiments
 
@@ -44,6 +89,3 @@ One step in the training process is equivalent to 4 frames in the environment.
 | Exploration fraction   | 0.1        | Fraction of the training steps used for epsilon greedy decay                           |
 | Epsilon final          | 0.01       | Minimum exploration value                                                              |
 | Frame Stack            | 4          | Number of frames stacked together                                                      |
-
-README will be updated later with more information, to include a summary of the research result. As well as a guide on
-how to start the experiments and a list of the technology used. (For now, you can check the Technical Design Document)

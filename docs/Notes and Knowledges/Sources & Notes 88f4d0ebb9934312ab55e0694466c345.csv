@@ -1,0 +1,28 @@
+﻿Name,Author(s)/Owner(s),File,Related Draft,Tags,Topic,Type,URL,Year
+Book Review: Reinforcement Learning (First Edition),C. R. Gallistel,Sources%20&%20Notes%2088f4d0ebb9934312ab55e0694466c345/Reinforcement_learning_Book_Review.pdf,,Primary,Reinforcement Learning,Book Review,https://d1wqtxts1xzle7.cloudfront.net/6985553/ivry_rev-libre.pdf?1390849262=&response-content-disposition=inline%3B+filename%3DReinforcement_learning.pdf&Expires=1682093314&Signature=ZhDZcW794fNNJCOM42DJjjjHoTZ~Pf0OiubEO-XEoDvEtTS-UicOwL54fqbBxdLPLzLe9qTLOtHKgDKqLPPHBak8Rc2CMC6X45QmbjdtGUtsBLmSV80g6SEEr9mL8EvJxWRJkPJIqMI4HIuFgENEWVTy5MXgoArlrcBwFoZ7DCWPvh2Kc7lCequ5RPMfbLa6rR~vaMXJm9t~9DNUr~VLvHc2hYVjGKiqdhRtSu5v0ALf7PxoC22x8isEVaS21eILtcEka1rBGIrvrR-ak3ReyGMrlbE7LdiQdCDTGjsIXohtGD6ibCHo0HNqgFOxptqZowh6afZEkOffbQlzArkiKw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA,1998
+"Reinforcement Learning, second edition: An Introduction.",Sutton Richard S. and Barto G. Andrew,,,Primary,Reinforcement Learning,Book,https://books.google.ie/books?hl=en&lr=&id=uWV0DwAAQBAJ&oi=fnd&pg=PR7&dq=Reinforcement+Learning&ots=mivGn50Xl7&sig=6UlgRLYE4msj7sTgXzMVwVzt0oc&redir_esc=y#v=onepage&q=Reinforcement%20Learning&f=false,2018
+An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale,"Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, Neil Houlsby",,,Primary,Vision Transformer,Paper,https://arxiv.org/pdf/2010.11929.pdf,2021
+Neural Machine Translation by jointly learning to align and translate,"Dzmitry Bahdanau, KyungHyun Cho Yoshua Bengio",,,Primary,Attention,Paper,https://arxiv.org/pdf/1409.0473.pdf,2015
+An Introduction to Convolutional Neural Network,Keiron O’Shea and Ryan Nash,,,Primary,CNN,Paper,https://arxiv.org/pdf/1511.08458.pdf,
+Introduction to Convolutional Neural Networks,Gabriele De Luca,,,Primary,CNN,Article,https://www.baeldung.com/cs/ai-convolutional-neural-networks,
+Quora Question: [Are there any video games that use neural networks for their AI?],Travis Addair,,,Secondary,,Article,https://www.quora.com/Are-there-any-video-games-that-use-neural-networks-for-their-AI,
+Comprehensive Biomedical Physics,Z.R Yang and Z. Yang,,,Secondary,,Paper,https://www.sciencedirect.com/topics/neuroscience/artificial-neural-network,2014
+Applications of Neural-Based Agents in Computer Game Design,Joseph Qualls and David J. Russomanno,,,Secondary,,,https://www.intechopen.com/chapters/10916#B15,2009
+CoAtNet: how to perfectly combine CNNs and Transformers,,,,Primary,"CNN, Neural Network, Transformer",Article,https://medium.com/codex/coatnet-how-to-perfectly-combine-cnns-and-transformer-9632e187ecbf,
+https://www.gymlibrary.dev/environments/atari/,,,,Secondary,,Website,https://www.gymlibrary.dev/environments/atari/,
+MarI/O - Machine Learning for Video Games,SethBling (Youtube),,,Secondary,,Video,https://www.youtube.com/watch?v=qv6UVOQ0F44,
+Reinforcement Learning,Yassin Hajaj,,,Secondary,Reinforcement Learning,Article,https://www.baeldung.com/cs/machine-learning-intro#reinforcement,
+Decision Tree,https://www.youtube.com/channel/UCiFF3AvbzLWdRyRnQMEttqw,,,Secondary,,Video,https://www.youtube.com/watch?v=Ih3U8Rju5ck,
+Neural Networks Demystified,Stephen Welch (@stephencwelch),,,Primary,Neural Network,Video,https://www.youtube.com/watch?v=bxe2T-V8XRs,
+The Ultimate Guide to Data Cleaning,,,,Secondary,,Article,https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4,
+Neural network tutorial: The back-propagation algorithm,Ryan Harris,,,Secondary,Neural Network,Video,https://www.youtube.com/watch?v=aVId8KMsdUU,
+Artificial Intelligence and Deep Learning in Video Games A Brief Review,"Geoff Skinner, Tobby Walmsley",Sources%20&%20Notes%2088f4d0ebb9934312ab55e0694466c345/Skinner-2019-Artificial-intelligence-and-deep-le_(1).pdf,,Primary,,Paper,,2019
+Why Video Game AI does not Use Machine Learning,Malte Skarupke,,,Secondary,,Website,https://probablydance.com/2020/01/29/why-video-game-ai-does-not-use-machine-learning/,2020
+Wikipedia: Machine learning in video games,,,,Secondary,,Article,https://en.wikipedia.org/wiki/Machine_learning_in_video_games,
+Evaluating real-time strategy game states using convolutional neural networks,"Marius Stanescu, Nicolas A. Barriga, Andy Hess, Michael Buro",,,Primary,CNN,Paper,https://ieeexplore.ieee.org/abstract/document/7860439,2016
+Top 4 Deep Learning Algorithms for Game Development with Use Cases,Anil Tilbe,,,Secondary,,Article,https://levelup.gitconnected.com/top-4-deep-learning-algorithms-for-game-development-with-use-cases-e236d4faa4da,2022
+Applications of Artificial Neural Networks in Games; An Overview,"Joonatan Mänttäri, Jonas Larsson",Sources%20&%20Notes%2088f4d0ebb9934312ab55e0694466c345/Applications_of_Artificial_Neural_Networ.pdf,,Secondary,,,,2011
+What is a Transformer Model?,https://blogs.nvidia.com/blog/author/rickmerritt/ick Merrit,,,Primary,Transformer,Article,https://blogs.nvidia.com/blog/2022/03/25/what-is-a-transformer-model/,2022
+Attention Is All You Need,"Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin",,,Primary,Transformer,Paper,https://arxiv.org/abs/1706.03762v5,2017
+while True: learn(),,,,,,Video game,,
+Grades Prediction,,,,Notes,,,,
