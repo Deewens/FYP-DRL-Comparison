@@ -1,6 +1,6 @@
 # Reinforcement Learning
 
-[Double DQN](Double DQN.md)
+[Double DQN](Double%20DQN.md)
 
 **Definition**
 

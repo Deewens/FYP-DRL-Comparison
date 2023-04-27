@@ -3,7 +3,7 @@
 You can click on the links to access the Markdown page. This folder groups all the resources and courses I wrote to
 myself while doing the project.
 
-- [Glossary](Glossary%20d93e6a576fd34ba4864df0574f9ef209.md): dictionary of words for Machine Learning and Reinforcement
+- [Glossary](Glossary.md): dictionary of words for Machine Learning and Reinforcement
   Learning
 - [Courses on Machine Learning](Machine%20Learning%20Courses/README.md): my courses that I wrote
 - [Issues and Thoughts](Issues%20and%20Thoughts.md): describe some of the issues I encountered (more details on Project

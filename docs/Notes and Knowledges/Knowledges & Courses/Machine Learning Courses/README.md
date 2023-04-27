@@ -4,9 +4,9 @@
 
 ---
 
-[Reinforcement Learning](Machine Learning ddb7341b59c44cedaf136d8aa8a842ae/Reinforcement Learning 51ea3e3e26384c90bd51af6ccd027a83.md)
+[Reinforcement Learning](Reinforcement%20Learning.md)
 
-[Neural Network](Machine Learning ddb7341b59c44cedaf136d8aa8a842ae/Neural Network b7ffa6c8359e4e9eb5b76f3d91eeb8e5.md)
+[Neural Network](Neural%20Network.md)
 
 # Machine Learning vs. Deep Learning vs. Neural Network
 
